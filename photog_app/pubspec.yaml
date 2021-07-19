@@ -24,6 +24,7 @@ dependencies:
   flutter:
     sdk: flutter
   smooth_page_indicator: ^0.2.3
+  font_awesome_flutter: ^9.1.0
 
 
 
@@ -50,6 +51,7 @@ flutter:
   assets:
      - assets/background.png
      - assets/man.png
+
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
