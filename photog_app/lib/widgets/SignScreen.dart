@@ -28,16 +28,20 @@ class _SignUpState extends State<SignUp> {
 
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(right:180,left: 180),
-              child:Divider(
-                color: Color(0xffF71735),
-                thickness: 4,
-                indent: 20,
-                endIndent: 20,
 
-              ),
+
+
+            Container(
+              margin: EdgeInsets.only(right: 320),
+              height: 2,
+              width: 70,
+              color: Colors.red,
             ),
+
+
+
+
+
             SizedBox(height: 20,),
       Padding(
         padding: const EdgeInsets.only(right:20,left: 20),

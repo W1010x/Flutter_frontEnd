@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'homePage.dart';
 
 class LogIn extends StatefulWidget {
   @override
@@ -30,16 +30,14 @@ class _SignUpState extends State<LogIn> {
 
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(right:180,left: 180),
-              child:Divider(
-                color: Color(0xffF71735),
-                thickness: 4,
-                indent: 20,
-                endIndent: 20,
-
-              ),
+            Container(
+              margin: EdgeInsets.only(right: 320),
+              height: 2,
+              width: 70,
+              color: Colors.red,
             ),
+
+
             SizedBox(height: 20,),
             Padding(
               padding: const EdgeInsets.only(right:20,left: 20),
@@ -63,7 +61,7 @@ class _SignUpState extends State<LogIn> {
             SizedBox(height: 40,),
 
             ElevatedButton(
-              child: Text('            SIGN IN            '),
+              child: Text('SIGN IN'),
               onPressed: () {
               },
               style: ElevatedButton.styleFrom(
@@ -99,15 +97,18 @@ class _SignUpState extends State<LogIn> {
             SizedBox(height: 10,),
             ElevatedButton(
               child: Text('            SIGN IN            '),
-              onPressed: () {
-              },
-              style: ElevatedButton.styleFrom(
+    style: ElevatedButton.styleFrom(
                 primary: Color(0xFF3B5998),
                 onPrimary: Colors.white,
                 padding: EdgeInsets.symmetric(horizontal: 100, vertical: 20),
                 textStyle: TextStyle(
                   fontSize: 17,
                 ),),
+              onPressed: () {
+    Navigator.push(
+    context,
+    MaterialPageRoute(builder: (context) =>homePage(),));
+    },
             ),
             SizedBox(height: 80,),
             RichText(
@@ -123,7 +124,6 @@ class _SignUpState extends State<LogIn> {
                         fontWeight: FontWeight.bold)),
               ]),
             ),
-
           ],
         ),
       ),
