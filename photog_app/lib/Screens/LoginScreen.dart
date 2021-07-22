@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:photog_app/ExtractedWidgets/btn.dart';
-import 'homePage.dart';
 
 class LogIn extends StatefulWidget {
   @override
@@ -60,31 +59,29 @@ class _SignUpState extends State<LogIn> {
               ),
             ),
             SizedBox(height: 40,),
+        Container(
+          padding: EdgeInsets.only(left: 250),
+          child:  Text('Forget Password?', )
+        ),
 
-            ElevatedButton(
-              child: Text('SIGN IN'),
-              onPressed: () {
-              Navigator.push(
-           context,
-             MaterialPageRoute(builder: (context) =>homePage(),));
+            SizedBox(height: 50,),
+            Button_Elevated(
+                Coluor:Color(0xff3BBCF8),
+                Teext:'   Sign up with twitter  '
+            ),
+            SizedBox(height: 10,),
 
-              },
-              style: ElevatedButton.styleFrom(
-                primary: Color(0xFFF71735),
-                onPrimary: Colors.white,
-                padding: EdgeInsets.symmetric(horizontal: 100, vertical: 20),
-                textStyle: TextStyle(
-                  fontSize: 17,
-                ),),
+            Text('OR'),
+
+            SizedBox(height: 10,),
+            Button_Elevated(
+                Coluor:Color(0xff3B5998),
+                Teext:'Sign up with Facebook'
             ),
 
 
-            SizedBox(height: 50,),
-            Text('OR'),
-            SizedBox(height: 10,),
-            Button_Elevated(),
-            SizedBox(height: 10,),
-            Button_Elevated(),
+
+
             SizedBox(height: 80,),
             RichText(
               textAlign: TextAlign.center,
