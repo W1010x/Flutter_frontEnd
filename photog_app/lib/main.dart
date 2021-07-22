@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import "package:photog_app/widgets/Splash.dart";
-
+import "package:photog_app/Screens//Splash.dart";
 void main() {
   runApp(MyApp());
 }

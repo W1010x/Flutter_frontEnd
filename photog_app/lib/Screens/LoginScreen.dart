@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:photog_app/ExtractedWidgets/btn.dart';
 import 'homePage.dart';
 
 class LogIn extends StatefulWidget {
@@ -81,38 +82,9 @@ class _SignUpState extends State<LogIn> {
             SizedBox(height: 50,),
             Text('OR'),
             SizedBox(height: 10,),
-
-
-            ElevatedButton(
-
-              child: Text('  Sign In with Twitter  '),
-              onPressed: () {
-              },
-
-              style: ElevatedButton.styleFrom(
-                primary: Color(0xFF3BBCF8),
-                onPrimary: Colors.white,
-                padding: EdgeInsets.symmetric(horizontal: 100, vertical: 20),
-                textStyle: TextStyle(
-                  fontSize: 17,
-                ),),
-            ),
-
+            Button_Elevated(),
             SizedBox(height: 10,),
-            ElevatedButton(
-              child: Text('Sign In with Facebook'),
-              style: ElevatedButton.styleFrom(
-                primary: Color(0xFF3B5998),
-                onPrimary: Colors.white,
-                padding: EdgeInsets.symmetric(horizontal: 100, vertical: 20),
-                textStyle: TextStyle(
-                  fontSize: 17,
-                ),),
-              onPressed: () {
-
-              }
-
-            ),
+            Button_Elevated(),
             SizedBox(height: 80,),
             RichText(
               textAlign: TextAlign.center,
@@ -133,3 +105,14 @@ class _SignUpState extends State<LogIn> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
