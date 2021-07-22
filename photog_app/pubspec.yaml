@@ -51,6 +51,9 @@ flutter:
   assets:
      - assets/background.png
      - assets/man.png
+     - assets/img1.png
+     - assets/img2.png
+
 
 
 
