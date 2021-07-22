@@ -39,30 +39,25 @@ class _SignUpState extends State<LogIn> {
 
 
             SizedBox(height: 20,),
-            Padding(
-              padding: const EdgeInsets.only(right:20,left: 20),
-              child: TextFormField(
-                decoration: InputDecoration(
-                    border: UnderlineInputBorder(),
-                    labelText: 'Email'
-                ),
-              ),
+            TextFeld(
+                Mytext:'Email'
             ),
+
             SizedBox(height: 20,),
-            Padding(
-              padding: const EdgeInsets.only(right:20,left: 20),
-              child: TextFormField(
-                decoration: InputDecoration(
-                    border: UnderlineInputBorder(),
-                    labelText: 'Password'
-                ),
-              ),
+            TextFeld(
+                Mytext:'Password'
             ),
-            SizedBox(height: 40,),
+            SizedBox(height: 30,),
+
         Container(
           padding: EdgeInsets.only(left: 250),
-          child:  Text('Forget Password?', )
+          child:  Text('Forget Password?',style: TextStyle(color: Colors.grey), )
         ),
+            SizedBox(height: 40,),
+            Button_Elevated(
+                Coluor:Color(0xffF71735),
+                Teext:'   Sign In    '
+            ),
 
             SizedBox(height: 50,),
             Button_Elevated(
@@ -97,6 +92,23 @@ class _SignUpState extends State<LogIn> {
               ]),
             ),
           ],
+        ),
+      ),
+    );
+  }
+}
+
+class TextFeld extends StatelessWidget {
+  TextFeld({@required this.Mytext});
+  final String Mytext;
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(right:20,left: 20),
+      child: TextFormField(
+        decoration: InputDecoration(
+            border: UnderlineInputBorder(),
+            labelText: Mytext,
         ),
       ),
     );
