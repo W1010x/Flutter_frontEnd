@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:photog_app/ExtractedWidgets/Container_img.dart';
 class homePage extends StatefulWidget {
   @override
   _homePageState createState() => _homePageState();
@@ -35,56 +36,20 @@ class _homePageState extends State<homePage> {
       ),
 
       //---------------------Body -------------------------//
-      body: Column(
-        children: [
-          Row(
-            children: [
-              SizedBox(width: 20,),
-              CircleAvatar(  backgroundImage: AssetImage('assets/man.png'),),
-              SizedBox(width: 10,),
-              Column(
-                children: [
-                  Text('Tobias Van'),
-                  Text('3 min read', style: TextStyle(color: Colors.grey),),
-                ],
-              ),
-           SizedBox(width: 230,),
-           IconButton(
-           icon: Icon(
-          Icons.more_vert,
+      body:SingleChildScrollView(
+        child: Column(
+          children: [
+            Container_img(),
+            Container_img(),
+            Container_img(),
+            Container_img(),
+            Container_img(),
+
+          ],
         ),
       )
-            ],
-          ),
-          SizedBox(height: 20,),
-          Column(
-            children: [
-              Text('A look into collaborative wireframing\nprocess',
-              style: TextStyle( fontSize: 20,fontWeight: FontWeight.w400),),
-              Container(
-                height: 200.0,
-                width: 350.0,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: AssetImage(
-                        'assets/img1.png'),
-                    fit: BoxFit.fill,
-                  ),
-                ),
-              ),
-              SizedBox(height: 10,),
-              Padding(
-                padding: const EdgeInsets.only(left: 30,right: 30),
-                child: Divider(
-                  color: Colors.grey,
-                ),
-              )
-            ],
-          )
 
-
-        ],
-      ),
     );
   }
 }
+

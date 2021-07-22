@@ -63,6 +63,10 @@ class _SignUpState extends State<LogIn> {
             ElevatedButton(
               child: Text('SIGN IN'),
               onPressed: () {
+              Navigator.push(
+           context,
+             MaterialPageRoute(builder: (context) =>homePage(),));
+
               },
               style: ElevatedButton.styleFrom(
                 primary: Color(0xFFF71735),
@@ -81,7 +85,7 @@ class _SignUpState extends State<LogIn> {
 
             ElevatedButton(
 
-              child: Text('            SIGN IN            '),
+              child: Text('  Sign In with Twitter  '),
               onPressed: () {
               },
 
@@ -96,8 +100,8 @@ class _SignUpState extends State<LogIn> {
 
             SizedBox(height: 10,),
             ElevatedButton(
-              child: Text('            SIGN IN            '),
-    style: ElevatedButton.styleFrom(
+              child: Text('Sign In with Facebook'),
+              style: ElevatedButton.styleFrom(
                 primary: Color(0xFF3B5998),
                 onPrimary: Colors.white,
                 padding: EdgeInsets.symmetric(horizontal: 100, vertical: 20),
@@ -105,10 +109,9 @@ class _SignUpState extends State<LogIn> {
                   fontSize: 17,
                 ),),
               onPressed: () {
-    Navigator.push(
-    context,
-    MaterialPageRoute(builder: (context) =>homePage(),));
-    },
+
+              }
+
             ),
             SizedBox(height: 80,),
             RichText(
