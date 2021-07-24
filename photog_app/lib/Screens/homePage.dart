@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:photog_app/ExtractedWidgets/Container_img.dart';
+import 'package:photog_app/ExtractedWidgets/bottom_nav.dart';
 class homePage extends StatefulWidget {
   @override
   _homePageState createState() => _homePageState();
@@ -8,6 +9,7 @@ class homePage extends StatefulWidget {
 class _homePageState extends State<homePage> {
   @override
   Widget build(BuildContext context) {
+
     //-------------------AppBar---------------------------//
     return Scaffold(
       backgroundColor: Color(0xffF9F9F9),
@@ -34,12 +36,25 @@ class _homePageState extends State<homePage> {
           )
         ],
       ),
+      bottomNavigationBar:CustomBottomNavigation(),
+
+
+
 
       //---------------------Body -------------------------//
       body:SingleChildScrollView(
         child: Column(
           children: [
-            Container_img(),
+            Container_img(
+      //       ElevatedButton(
+      //       onPressed: (){
+      // Navigator.push(
+      // context,
+      // MaterialPageRoute(builder: (context) => Detail()
+      // ));
+      // },
+
+            ),
             Container_img(),
             Container_img(),
             Container_img(),
@@ -47,9 +62,11 @@ class _homePageState extends State<homePage> {
 
           ],
         ),
-      )
+      ),
+
 
     );
   }
 }
+
 

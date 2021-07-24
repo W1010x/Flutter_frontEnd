@@ -74,9 +74,6 @@ class _SignUpState extends State<LogIn> {
                 Teext:'Sign up with Facebook'
             ),
 
-
-
-
             SizedBox(height: 80,),
             RichText(
               textAlign: TextAlign.center,

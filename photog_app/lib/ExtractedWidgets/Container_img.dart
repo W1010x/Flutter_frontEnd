@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 class Container_img extends StatelessWidget {
-  const Container_img({
-    Key key,
-  }) : super(key: key);
+  Container_img({@required this.Coluor,this.myText});
+  final Color Coluor;
+  final String myText;
+  
 
   @override
   Widget build(BuildContext context) {
@@ -15,8 +16,8 @@ class Container_img extends StatelessWidget {
             SizedBox(width: 10,),
             Column(
               children: [
-                Text('Tobias Van'),
-                Text('3 min read', style: TextStyle(color: Colors.grey),),
+                Text(myText),
+                Text(myText, style: TextStyle(color: Colors.grey),),
               ],
             ),
             SizedBox(width: 230,),
