@@ -16,8 +16,8 @@ class Container_img extends StatelessWidget {
             SizedBox(width: 10,),
             Column(
               children: [
-                Text(myText),
-                Text(myText, style: TextStyle(color: Colors.grey),),
+                Text('Tobias Van'),
+                Text('3 min read', style: TextStyle(color: Colors.grey),),
               ],
             ),
             SizedBox(width: 230,),
