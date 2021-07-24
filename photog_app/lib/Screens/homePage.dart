@@ -46,13 +46,6 @@ class _homePageState extends State<homePage> {
         child: Column(
           children: [
             Container_img(
-      //       ElevatedButton(
-      //       onPressed: (){
-      // Navigator.push(
-      // context,
-      // MaterialPageRoute(builder: (context) => Detail()
-      // ));
-      // },
 
             ),
             Container_img(),

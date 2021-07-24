@@ -3,7 +3,7 @@ class Container_img extends StatelessWidget {
   Container_img({@required this.Coluor,this.myText});
   final Color Coluor;
   final String myText;
-  
+
 
   @override
   Widget build(BuildContext context) {
