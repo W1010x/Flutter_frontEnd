@@ -10,6 +10,7 @@ class _LogInState extends State<LogIn> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+resizeToAvoidBottomInset: false,
       body: Container(
         decoration: BoxDecoration(
           color: Colors.white,
@@ -17,19 +18,17 @@ class _LogInState extends State<LogIn> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            Padding(
-              padding: const EdgeInsets.only(top: 150,left: 20),
-              child: Align(
+            Spacer(flex: 5,),
+             Align(
                 alignment: Alignment.centerLeft,
-                child: Text('Welcome\nBack.',
+                child: Text(' Welcome\n Back.',
                   style: TextStyle(
                       fontSize: 35,color: Colors.black,
                       fontWeight: FontWeight.w400
                   ),
                 ),
-
               ),
-            ),
+
             Container(
               margin: EdgeInsets.only(right: 320),
               height: 2,
@@ -37,26 +36,26 @@ class _LogInState extends State<LogIn> {
               color: Colors.red,
             ),
 
-            Spacer(flex: 1,),
+            Spacer(flex: 2,),
            // SizedBox(height: 20,),
             TextFeld(
                 Mytext:'Email'
             ),
 
-            Spacer(flex: 1,),
+            Spacer(flex: 2,),
 
             TextFeld(
                 Mytext:'Password'
             ),
            // SizedBox(height: 30,),
-            Spacer(flex: 1,),
+            Spacer(flex: 2,),
 
         Container(
           padding: EdgeInsets.only(left: 250),
           child:  Text('Forget Password?',style: TextStyle(color: Colors.grey), )
         ),
            // SizedBox(height: 40,)
-            Spacer(flex: 1,),
+            Spacer(flex: 2,),
 
             Button_Elevated(
                 Coluor:Color(0xffF71735),
