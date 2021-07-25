@@ -9,6 +9,7 @@ class CustomBottomNavigation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
+      type: BottomNavigationBarType.fixed,
       backgroundColor: Color(0xff011627),
       items: const <BottomNavigationBarItem>[
         BottomNavigationBarItem(
@@ -19,10 +20,13 @@ class CustomBottomNavigation extends StatelessWidget {
           icon: Icon(Icons.search,color: Color(0xff344552),),
           label: 'search',
         ),
-
         BottomNavigationBarItem(
           icon: Icon(Icons.bookmark_border,color:Color(0xff344552)),
           label: 'book mark',
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.person,color: Color(0xff344552),),
+          label: 'profile',
         ),
       ],
       currentIndex: selectedIndex,

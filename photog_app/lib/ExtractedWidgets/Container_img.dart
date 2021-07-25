@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:photog_app/Screens/Details.dart';
 class Container_img extends StatelessWidget {
   Container_img({@required this.Coluor,this.myText});
   final Color Coluor;
@@ -28,19 +29,27 @@ class Container_img extends StatelessWidget {
             )
           ],
         ),
-        SizedBox(height: 20,),
+        SizedBox(height: 30,),
         Column(
           children: [
             Text('A look into collaborative wireframing\nprocess',
               style: TextStyle( fontSize: 20,fontWeight: FontWeight.w400),),
-            Container(
-              height: 200.0,
-              width: 350.0,
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage(
-                      'assets/img1.png'),
-                  fit: BoxFit.fill,
+            GestureDetector(
+              onTap: (){
+               Navigator.push(
+             context,
+             MaterialPageRoute(builder: (context) => Detail()),
+               );
+              },
+              child: Container(
+                height: 200.0,
+                width: 350.0,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage(
+                        'assets/img1.png'),
+                    fit: BoxFit.fill,
+                  ),
                 ),
               ),
             ),
