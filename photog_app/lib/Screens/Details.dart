@@ -15,7 +15,6 @@ class _DetailState extends State<Detail> {
     backgroundColor: Color(0xffF9F9F9),
     elevation: 0,
     actions: [
-    Spacer(flex: 2,),
  Icon(
     Icons.bookmark_border,
     color: Colors.black,
@@ -25,6 +24,7 @@ class _DetailState extends State<Detail> {
     body: SingleChildScrollView(
       child: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Container(
               height: 200.0,
@@ -37,8 +37,7 @@ class _DetailState extends State<Detail> {
                 ),
               ),
             ),
-           SizedBox(height: 20,),
-
+      Spacer(flex: 2,),
             Text('A look into collaborative\n wireframing process',style: TextStyle(fontSize: 26,fontWeight: FontWeight.w400),),
             SizedBox(height: 20,),
             Row(

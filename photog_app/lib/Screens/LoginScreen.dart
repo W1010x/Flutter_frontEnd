@@ -37,38 +37,46 @@ class _SignUpState extends State<LogIn> {
               color: Colors.red,
             ),
 
-
-            SizedBox(height: 20,),
+            Spacer(flex: 1,),
+           // SizedBox(height: 20,),
             TextFeld(
                 Mytext:'Email'
             ),
 
-            SizedBox(height: 20,),
+            Spacer(flex: 1,),
+
             TextFeld(
                 Mytext:'Password'
             ),
-            SizedBox(height: 30,),
+           // SizedBox(height: 30,),
+            Spacer(flex: 1,),
 
         Container(
           padding: EdgeInsets.only(left: 250),
           child:  Text('Forget Password?',style: TextStyle(color: Colors.grey), )
         ),
-            SizedBox(height: 40,),
+           // SizedBox(height: 40,)
+            Spacer(flex: 1,),
+
             Button_Elevated(
                 Coluor:Color(0xffF71735),
                 Teext:'   Sign In    '
             ),
+            Spacer(flex: 1,),
 
-            SizedBox(height: 50,),
+           // SizedBox(height: 50,),
             Button_Elevated(
                 Coluor:Color(0xff3BBCF8),
                 Teext:'   Sign up with twitter  '
             ),
-            SizedBox(height: 10,),
+            Spacer(flex: 1,),
+
+            // SizedBox(height: 10,),
 
             Text('OR'),
 
-            SizedBox(height: 10,),
+            Spacer(flex: 1,),
+
             Button_Elevated(
                 Coluor:Color(0xff3B5998),
                 Teext:'Sign up with Facebook'
