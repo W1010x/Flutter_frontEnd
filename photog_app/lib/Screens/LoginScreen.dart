@@ -3,10 +3,10 @@ import 'package:photog_app/ExtractedWidgets/btn.dart';
 import 'package:photog_app/ExtractedWidgets/textFeilds.dart';
 class LogIn extends StatefulWidget {
   @override
-  _SignUpState createState() => _SignUpState();
+  _LogInState createState() => _LogInState();
 }
 
-class _SignUpState extends State<LogIn> {
+class _LogInState extends State<LogIn> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
