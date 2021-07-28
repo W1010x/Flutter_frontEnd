@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:photog_app/ExtractedWidgets/nav_buttons.dart';
+
 class Detail extends StatefulWidget {
 
   @override
@@ -15,17 +17,24 @@ class _DetailState extends State<Detail> {
     backgroundColor: Color(0xffF9F9F9),
     elevation: 0,
     actions: [
- Icon(
-    Icons.bookmark_border,
-    color: Colors.black,
-    size: 25.0,
-    ),
+ Padding(
+   padding: const EdgeInsets.only(right: 15.0),
+   child: Icon(
+      Icons.bookmark_border,
+      color: Colors.black,
+      size: 25.0,
+      ),
+ ),
   ]),
+    bottomNavigationBar:Social(),
+//------------------Body-------------------
+    
     body: SingleChildScrollView(
       child: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
+            SizedBox(height: 30,),
             Container(
               height: 200.0,
               width: 350.0,
@@ -37,7 +46,7 @@ class _DetailState extends State<Detail> {
                 ),
               ),
             ),
-      Spacer(flex: 2,),
+           SizedBox(height: 20,),
             Text('A look into collaborative\n wireframing process',style: TextStyle(fontSize: 26,fontWeight: FontWeight.w400),),
             SizedBox(height: 20,),
             Row(

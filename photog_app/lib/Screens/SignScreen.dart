@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:photog_app/ExtractedWidgets/lable.dart';
 class SignUp extends StatefulWidget {
   @override
   _SignUpState createState() => _SignUpState();
@@ -28,30 +29,24 @@ class _SignUpState extends State<SignUp> {
 
               ),
             ),
-
-
-
+            
             Container(
               margin: EdgeInsets.only(right: 320),
               height: 2,
               width: 70,
               color: Colors.red,
             ),
-
-
-
-
-
+            
             SizedBox(height: 20,),
-      Padding(
-        padding: const EdgeInsets.only(right:20,left: 20),
-           child: TextFormField(
-              decoration: InputDecoration(
-                  border: UnderlineInputBorder(),
-                  labelText: 'Full Name'
+            Padding(
+              padding: const EdgeInsets.only(right:20,left: 20),
+              child: TextFormField(
+                decoration: InputDecoration(
+                    border: UnderlineInputBorder(),
+                    labelText: 'Full Name'
+                ),
               ),
             ),
-      ),
             SizedBox(height: 20,),
             Padding(
               padding: const EdgeInsets.only(right:20,left: 20),
@@ -106,3 +101,4 @@ class _SignUpState extends State<SignUp> {
     );
   }
 }
+

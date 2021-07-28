@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:photog_app/Screens/Details.dart';
 class Container_img extends StatelessWidget {
-  Container_img({@required this.Coluor,this.myText});
-  final Color Coluor;
-  final String myText;
+  // Container_img({@required this.myText});
+  // final String myText;
 
 
   @override
@@ -23,6 +22,7 @@ class Container_img extends StatelessWidget {
             ),
             SizedBox(width: 230,),
             IconButton(
+              onPressed: (){},
               icon: Icon(
                 Icons.more_vert,
               ),
