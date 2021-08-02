@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:form/Constant/cons.dart';
+import 'package:form/widgets/Button.dart';
+import 'package:form/widgets/form.dart';
+
 class SignUp extends StatefulWidget {
   @override
   _SignUpState createState() => _SignUpState();
@@ -11,10 +14,9 @@ class _SignUpState extends State<SignUp> {
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(
-          color: Colors.white,
+          color: kWhiteColor,
         ),
         child: ListView(
-        //  mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Padding(
               padding: const EdgeInsets.only(top: 150,left: 20),
@@ -26,64 +28,33 @@ class _SignUpState extends State<SignUp> {
               ),
             ),
 
-            Container(
-              margin: EdgeInsets.only(right: 320),
-              height: 2,
-              width: 70,
-              color: kBlueColor
+            Center(
+              child: Container(
+                margin: EdgeInsets.only(right: 320),
+                height: 2,
+                width: 70,
+                color: kBlueColor
+              ),
             ),
 
             SizedBox(height: 20,),
-            Padding(
-              padding: const EdgeInsets.only(right:20,left: 20),
-              child: TextFormField(
-                decoration: InputDecoration(
-                    border: UnderlineInputBorder(),
-                    labelText: 'Full Name'
-                ),
-              ),
+            TextForm(
+                myText: 'Full Name'
             ),
             SizedBox(height: 20,),
-            Padding(
-              padding: const EdgeInsets.only(right:20,left: 20),
-              child: TextFormField(
-                decoration: InputDecoration(
-                    border: UnderlineInputBorder(),
-                    labelText: 'Email'
-                ),
-              ),
+            TextForm(
+                myText: 'Email'
             ),
+
             SizedBox(height: 20,),
-            Padding(
-              padding: const EdgeInsets.only(right:20,left: 20),
-              child: TextFormField(
-                decoration: InputDecoration(
-                    border: UnderlineInputBorder(),
-                    labelText: 'Create Password'
-                ),
-              ),
+            TextForm(
+                myText: 'Create PassWord'
             ),
+
             SizedBox(height: 40,),
-
-            Padding(
-              padding: const EdgeInsets.all(10.0),
-              child: ElevatedButton(
-                child: Text('CREATE ACCOUNT'),
-                onPressed: () {
-                },
-                style: ElevatedButton.styleFrom(
-                  primary: kBlueColor,
-                  onPrimary:kWhiteColor,
-                  padding: EdgeInsets.symmetric(horizontal: 50, vertical: 20),
-                  textStyle: TextStyle(
-                    fontSize: 17,
-                  ),),
-              ),
-            ),
-
-
-
-            SizedBox(height: 250,),
+            Button(),
+// Rich Text help me to add multiple text with diffrent style
+            SizedBox(height:100,),
             RichText(
               textAlign: TextAlign.center,
               text: TextSpan(children: <TextSpan>[
@@ -104,3 +75,4 @@ class _SignUpState extends State<SignUp> {
     );
   }
 }
+
