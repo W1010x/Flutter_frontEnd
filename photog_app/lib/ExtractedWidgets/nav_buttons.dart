@@ -55,7 +55,6 @@ class Social extends StatelessWidget {
                 onPressed: (){
                 }),
           ))
-
         ],
 
 
