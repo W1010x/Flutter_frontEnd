@@ -5,14 +5,12 @@ class TextForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(right:20,left: 20),
-      child: TextFormField(
+    return TextFormField(
         decoration: InputDecoration(
             border: UnderlineInputBorder(),
             labelText: myText
         ),
-      ),
+
     );
   }
 }

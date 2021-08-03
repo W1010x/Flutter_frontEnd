@@ -17,8 +17,7 @@ class _SignUpState extends State<SignUp> {
           color: kWhiteColor,
         ),
         child: Padding(
-          padding: const EdgeInsets.only(top: 150,left: 10),
-
+          padding: const EdgeInsets.only(top: 150,left: 20,right: 20),
 
           child: ListView(
             children: [
@@ -28,7 +27,6 @@ class _SignUpState extends State<SignUp> {
                     style: kTitleStyle,
                   ),
                 ),
-
               Align(
                 alignment: Alignment.centerLeft,
                 child: Container(
