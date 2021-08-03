@@ -51,7 +51,7 @@ class _SignUpState extends State<SignUp> {
 
               SizedBox(height: 40,),
               Button(),
-// Rich Text help me to add multiple text with diffrent style
+           // Rich Text help me to add multiple text with diffrent style
               SizedBox(height:100,),
               RichText(
                 textAlign: TextAlign.center,
@@ -64,10 +64,9 @@ class _SignUpState extends State<SignUp> {
                       style: TextStyle(
                           color: kTextColor,
                           fontWeight: FontWeight.bold)),
-                ]),
+                ]
+                ),
               ),
-
-
             ],
           ),
         ),
