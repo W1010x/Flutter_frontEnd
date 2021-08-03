@@ -7,20 +7,18 @@ class Button extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(10.0),
-      child: ElevatedButton(
+    return ElevatedButton(
         child: Text('CREATE ACCOUNT'),
         onPressed: () {
         },
         style: ElevatedButton.styleFrom(
           primary: kBlueColor,
           onPrimary:kWhiteColor,
-          padding: EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+          padding: EdgeInsets.symmetric(horizontal: 100, vertical: 20),
           textStyle: TextStyle(
             fontSize: 17,
           ),),
-      ),
-    );
+      );
+
   }
 }

@@ -17,10 +17,10 @@ class _SignUpState extends State<SignUp> {
           color: kWhiteColor,
         ),
         child: Padding(
-          padding: const EdgeInsets.only(top: 150,left: 20,right: 20),
-
+          padding: const EdgeInsets.all(20.0),
           child: ListView(
             children: [
+              SizedBox(height: 150,),
             Align(
                   alignment: Alignment.centerLeft,
                   child: Text('Create\nAccount.',
