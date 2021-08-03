@@ -16,60 +16,62 @@ class _SignUpState extends State<SignUp> {
         decoration: BoxDecoration(
           color: kWhiteColor,
         ),
-        child: ListView(
-          children: [
-            Padding(
-              padding: const EdgeInsets.only(top: 150,left: 20),
-              child: Align(
-                alignment: Alignment.centerLeft,
-                child: Text('Create\nAccount.',
-                  style: kTitleStyle,
+        child: Padding(
+          padding: const EdgeInsets.only(top: 150,left: 10),
+
+
+          child: ListView(
+            children: [
+            Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text('Create\nAccount.',
+                    style: kTitleStyle,
+                  ),
                 ),
+
+              Align(
+                alignment: Alignment.centerLeft,
+                child: Container(
+                    height: 2,
+                    width: 70,
+                    color: kBlueColor),
               ),
-            ),
 
-            Center(
-              child: Container(
-                margin: EdgeInsets.only(right: 320),
-                height: 2,
-                width: 70,
-                color: kBlueColor
+              SizedBox(height: 20,),
+              TextForm(
+                  myText: 'Full Name'
               ),
-            ),
+              SizedBox(height: 20,),
+              TextForm(
+                  myText: 'Email'
+              ),
 
-            SizedBox(height: 20,),
-            TextForm(
-                myText: 'Full Name'
-            ),
-            SizedBox(height: 20,),
-            TextForm(
-                myText: 'Email'
-            ),
+              SizedBox(height: 20,),
+              TextForm(
+                  myText: 'Create PassWord'
+              ),
 
-            SizedBox(height: 20,),
-            TextForm(
-                myText: 'Create PassWord'
-            ),
-
-            SizedBox(height: 40,),
-            Button(),
+              SizedBox(height: 40,),
+              Button(),
 // Rich Text help me to add multiple text with diffrent style
-            SizedBox(height:100,),
-            RichText(
-              textAlign: TextAlign.center,
-              text: TextSpan(children: <TextSpan>[
-                TextSpan(
-                    text: "Already have an account? ",
-                    style: TextStyle(color:kBlackColor)),
-                TextSpan(
-                    text: "Sign Up",
-                    style: TextStyle(
-                        color: kTextColor,
-                        fontWeight: FontWeight.bold)),
-              ]),
-            )
+              SizedBox(height:100,),
+              RichText(
+                textAlign: TextAlign.center,
+                text: TextSpan(children: <TextSpan>[
+                  TextSpan(
+                      text: "Already have an account? ",
+                      style: TextStyle(color:kBlackColor)),
+                  TextSpan(
+                      text: "Sign Up",
+                      style: TextStyle(
+                          color: kTextColor,
+                          fontWeight: FontWeight.bold)),
+                ]),
+              ),
 
-          ],
+
+            ],
+          ),
         ),
       ),
     );
