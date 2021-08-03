@@ -27,13 +27,13 @@ class _SignUpState extends State<SignUp> {
                     style: kTitleStyle,
                   ),
                 ),
-              Align(
-                alignment: Alignment.centerLeft,
-                child: Container(
-                    height: 2,
-                    width: 70,
-                    color: kBlueColor),
-              ),
+            Align(
+              alignment: Alignment.centerLeft,
+              child: Container(
+                height: 2,
+                width: 40,
+                color: kBlueColor),
+            ),
 
               SizedBox(height: 20,),
               TextForm(
