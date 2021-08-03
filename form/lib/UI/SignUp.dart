@@ -37,16 +37,20 @@ class _SignUpState extends State<SignUp> {
 
               SizedBox(height: 20,),
               TextForm(
-                  myText: 'Full Name'
+                  myText: 'Full Name',
+                hidden: false,
               ),
               SizedBox(height: 20,),
               TextForm(
-                  myText: 'Email'
+                  myText: 'Email',
+                 hidden: false,
               ),
 
               SizedBox(height: 20,),
               TextForm(
-                  myText: 'Create PassWord'
+                  myText: ' Password',
+                hidden: true,
+
               ),
 
               SizedBox(height: 40,),
