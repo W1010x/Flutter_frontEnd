@@ -21,12 +21,15 @@ class _SignUpState extends State<SignUp> {
           child: ListView(
             children: [
               SizedBox(height: 150,),
+
             Align(
                   alignment: Alignment.centerLeft,
-                  child: Text('Create\nAccount.',
+                  child: Text('Welcome\nBack.',
                     style: kTitleStyle,
                   ),
                 ),
+
+
             Align(
               alignment: Alignment.centerLeft,
               child: Container(
@@ -35,11 +38,7 @@ class _SignUpState extends State<SignUp> {
                 color: kBlueColor),
             ),
 
-              SizedBox(height: 20,),
-              TextForm(
-                  myText: 'Full Name',
-                hidden: false,
-              ),
+
               SizedBox(height: 20,),
               TextForm(
                   myText: 'Email',
@@ -50,18 +49,44 @@ class _SignUpState extends State<SignUp> {
               TextForm(
                   myText: ' Password',
                 hidden: true,
-
               ),
 
+
+              SizedBox(height: 20,),
+              Align(
+                alignment: Alignment.centerRight,
+                child: Text('Forget Password?')
+              ),
               SizedBox(height: 40,),
-              Button(),
+
+              Button(
+                myText:' SIGN IN',
+                color: kTextColor,
+              ),
+              SizedBox(height: 20,),
+
+              Center(child: Text('OR')),
+              SizedBox(height: 20,),
+
+              Button(
+                myText:' Sign In With Twitter',
+                color: kTextColor,
+              ),
+
+              SizedBox(height: 20,),
+              Button(
+                myText:' Sign In With Facebook',
+                color: kBlueDarkColor,
+              ),
+
+
            // Rich Text help me to add multiple text with diffrent style
-              SizedBox(height:100,),
+              SizedBox(height:80,),
               RichText(
                 textAlign: TextAlign.center,
                 text: TextSpan(children: <TextSpan>[
                   TextSpan(
-                      text: "Already have an account? ",
+                      text: "New User?",
                       style: TextStyle(color:kBlackColor)),
                   TextSpan(
                       text: "Sign Up",

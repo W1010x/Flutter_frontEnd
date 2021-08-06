@@ -9,3 +9,4 @@ const kWhiteColor=Color(0xFFFFFFFF);
 const kBlackColor=Color(0xFF000000);
 const kTextColor=Color(0xFF3BBCF7);
 const kBlueColor=Color(0xFF3BBCF7);
+const kBlueDarkColor=Color(0xFF11169c);
